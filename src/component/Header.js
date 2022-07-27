@@ -1,13 +1,13 @@
 import React from 'react'
 import { Badge, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap'
 import {FaCartArrowDown} from 'react-icons/fa'
-
+import { Link } from 'react-router-dom'
 function Header() {
   return (
     <Navbar bg="light" variant="light" style={{height:100}}>
         <Container>
             <Navbar.Brand>
-                <a href="/">ShoppinKE</a>
+                <Link to="/">ShoppinKE</Link>
             </Navbar.Brand>
             <Navbar.Text className='search'>
                 <FormControl style={{width:700}} placeholder="Search a product"
