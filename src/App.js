@@ -1,21 +1,18 @@
-import { BrowserRouter, Route } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
-import Header from './component/Header';
+import { Button } from '@mui/material';
+import { Container } from '@mui/system';
+
+
 function App() {
-  return (
-    <BrowserRouter>
-    <Header/>
-    <div>
-      <Route path='/' exact>
-        <Home/>
-      </Route>
-      <Route path='/cart' exact>
-        <Cart/>
-      </Route>
-      
-    </div>
-    </BrowserRouter>
-      
+  useEffect(()=>{
+    document.title="ShoppinKe";
+  },[]);
+  return(
+    <Container maxWidth="xl" sx={{background:"#fff"}}>
+
+      <Button>Test</Button>
+    </Container>
 
     
   );
