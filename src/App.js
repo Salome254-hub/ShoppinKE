@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import './App.css';
-import { Button } from '@mui/material';
-import { Container } from '@mui/system';
+import { Button, Container } from '@mui/material';
+import theme from './styles/theme';
+import {ThemeProvider} from "@mui/material";
 
 
 function App() {
@@ -9,10 +10,14 @@ function App() {
     document.title="ShoppinKe";
   },[]);
   return(
-    <Container maxWidth="xl" sx={{background:"#fff"}}>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="xl" sx={{background:"#fff"}}>
 
-      <Button>Test</Button>
-    </Container>
+      <Button variant='contained'>Test</Button>
+      </Container>
+
+    </ThemeProvider>
+    
 
     
   );
