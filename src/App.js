@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import './App.css';
-import { Button, Container } from '@mui/material';
+import {Container } from '@mui/material';
 import theme from './styles/theme';
 import {ThemeProvider} from "@mui/material"
 import Appbar from "./components/appbar/index"
+import Banner from './components/banner';
 function App() {
   useEffect(()=>{
     document.title="ShoppinKe";
@@ -12,8 +13,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl" sx={{background:"#fff"}}>
         <Appbar />
-
-      <Button variant='contained'>Test</Button>
+        <Banner />
+      
       </Container>
 
     </ThemeProvider>
