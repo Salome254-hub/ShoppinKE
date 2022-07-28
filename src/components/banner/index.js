@@ -10,7 +10,7 @@ export default function Banner() {
         <BannerImage src="/images/banner/lake-3612279_1920.jpg"></BannerImage>
         <BannerContent>
             <Typography varaiant="h6">Huge Collection</Typography>
-            <BannerTitle varaiant="h2">New Bags</BannerTitle>
+            <BannerTitle color={"purple"}  varaiant="h2">New Bags</BannerTitle>
                 <BannerDescription varaiant="subtitle">
                    
                    
