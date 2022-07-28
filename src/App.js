@@ -5,6 +5,7 @@ import theme from './styles/theme';
 import {ThemeProvider} from "@mui/material"
 import Appbar from "./components/appbar/index"
 import Banner from './components/banner';
+import Promotions from './components/promotions';
 function App() {
   useEffect(()=>{
     document.title="ShoppinKe";
@@ -14,6 +15,7 @@ function App() {
       <Container maxWidth="xl" sx={{background:"#fff"}}>
         <Appbar />
         <Banner />
+        <Promotions />
       
       </Container>
 
